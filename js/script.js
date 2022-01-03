@@ -6,11 +6,15 @@
 
     form.addEventListener('submit', event => {
         event.preventDefault();
+        const inputs = event.target.querySelectorAll('input');
         const obj = {};
 
-        const inputs = event.target.querySelectorAll('input');
 
         inputs.forEach(input => {
+
+            if (input.value.length == 0) {
+                alert('Empty cells are not allowed!');
+            }
 
             input.addEventListener('focus', event => {
                 if (input.value.length == 0) {
@@ -32,7 +36,7 @@
 
     function createMessage(data) {
         const messageWrapper = document.createElement('div');
-        messageWrapper.classList.add('card','mb-3');
+        messageWrapper.classList.add('card', 'mb-3');
 
         const divEmail = document.createElement('div');
         const divPassword = document.createElement('div');
