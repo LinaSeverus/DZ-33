@@ -17,3 +17,9 @@
   box-shadow: 2px 2px 1px rgb(195, 85, 181);
 }
 
+.card{
+  background-color: blanchedalmond;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 600;
+}

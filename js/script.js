@@ -31,12 +31,18 @@
     });
 
     function createMessage(data) {
+        const messageWrapper = document.createElement('div');
+        messageWrapper.classList.add('card','mb-3');
+
         const divEmail = document.createElement('div');
         const divPassword = document.createElement('div');
-        divEmail.innerText = data.Email;
+
         divPassword.innerText = data.Password;
-        document.querySelector('.card-content').append(divEmail);
-        document.querySelector('.card-content').append(divPassword);
+        divEmail.innerText = data.Email;
+
+        document.querySelector('.card-content').append(messageWrapper);
+        messageWrapper.append(divEmail);
+        messageWrapper.append(divPassword);
     }
 })();
 
