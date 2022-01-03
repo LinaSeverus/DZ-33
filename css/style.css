@@ -1,0 +1,19 @@
+
+.form-control {
+  padding: 10px;
+}
+
+.sub {
+  margin-top: 20px;
+  padding: 8px 70px;
+  background-color: #c353ab;
+  color: white;
+  font-weight: 600;
+    
+} 
+.sub:hover{
+  background-color: #948f94;
+  transition: .4s;
+  box-shadow: 2px 2px 1px rgb(195, 85, 181);
+}
+
